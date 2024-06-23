@@ -83,29 +83,7 @@ export default function Header(props: IHeaderProps) {
 						{!props.isCodeGroundArea && (
 							<li className="navbar-list_lastitem">
 								<Link className="start-learning_btn-link" to="/codeground">
-									<Button
-										style={{
-											fontStyle: "normal",
-											fontWeight: 600,
-											fontSize: 16,
-											textDecoration: "none",
-											textTransform: "none",
-											letterSpacing: 0,
-											lineHeight: 19,
-											color: "#FFFFFF",
-											display: "flex",
-											alignItems: "center",
-											justifyContent: "center",
-											width: 164,
-											height: 56,
-											background:
-												"linear-gradient(241.71deg, #32C5FF -23.05%, #A3BF4A 95.65%)",
-											borderRadius: 6,
-											textAlign: "center",
-											fontFamily: "'Poppins', sans-serif",
-										}}
-										className="start-learning_btn"
-										variant="contained">
+									<Button className="start-learning_btn" variant="contained">
 										{" "}
 										Start Learning
 									</Button>
