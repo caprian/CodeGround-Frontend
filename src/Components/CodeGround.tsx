@@ -9,7 +9,6 @@ import {
 import { Button } from "@mui/material";
 import { chapters } from "./chapters";
 import { useStore } from "zustand";
-import RunButton from "./RunButton";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import SignInDialog from "./SignInDialog";
@@ -20,7 +19,6 @@ export default function CodeGround() {
 	const store = useCompilerStoreContext();
 	const setChapter = store.getState().setChapter;
 	const chapter = useStore(store, (state) => state.chapter);
-	const editorRef = useStore(store, (state) => state.editorRef);
 	const openSignInDialog = useStore(store, (state) => state.openSignInDialog);
 	const openSignUpDialog = useStore(store, (state) => state.openSignUpDialog);
 

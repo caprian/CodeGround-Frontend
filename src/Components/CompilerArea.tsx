@@ -21,7 +21,7 @@ export default function CompilerArea() {
 	const setEditorRef = store.getState().setEditorRef;
 
 	const [javaCode, setJavaCode] = useState(getCodeSnippets(chapter));
-	const [value, setValue] = useState(javaCode);
+	// const [value, setValue] = useState(javaCode);
 
 	useEffect(() => {
 		const javaCodeSnippet = getCodeSnippets(chapter);
@@ -29,15 +29,15 @@ export default function CompilerArea() {
 		store.setState({ code: javaCodeSnippet });
 	}, [chapter, store]);
 
-	useEffect(() => {
-		setValue(code);
-	}, [code]);
+	// useEffect(() => {
+	// 	setValue(code);
+	// }, [code]);
 
 	const editorRef = useRef(null);
 
 	const handleEditorChange = (newValue: string | undefined) => {
 		if (newValue !== undefined) {
-			setValue(newValue);
+			// setValue(newValue);
 			store.setState({ code: newValue });
 		}
 	};

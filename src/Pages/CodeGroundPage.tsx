@@ -1,6 +1,5 @@
 import React from "react";
 import CodeGround from "../Components/CodeGround";
-import Header from "../Components/Header";
 import { CompilerStoreProvider } from "../Components/CompilerStore";
 import CodeGroundHeader from "../Components/CodeGroundHeader";
 
