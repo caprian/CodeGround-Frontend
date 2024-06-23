@@ -11,7 +11,7 @@ import { useStore } from "zustand";
 
 export default function CompilerArea() {
 	const store = useCompilerStoreContext();
-	const { language, theme, code, chapter } = useStore(store, (state) => ({
+	const { language, theme, chapter } = useStore(store, (state) => ({
 		language: state.language,
 		theme: state.theme,
 		code: state.code,
