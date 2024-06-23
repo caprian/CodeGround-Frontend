@@ -37,10 +37,13 @@ export default function SignInDialog() {
 		e.preventDefault();
 		setIsLoading(true);
 		try {
-			const response = await axios.post("http://localhost:8080/auth/login", {
-				emailId: email,
-				password: password,
-			});
+			const response = await axios.post(
+				"https://codeground-backend.onrender.com/auth/login",
+				{
+					emailId: email,
+					password: password,
+				}
+			);
 			if (response.status === 200) {
 				SetUserLogged(true);
 				SetOpenSignInDialog(false);

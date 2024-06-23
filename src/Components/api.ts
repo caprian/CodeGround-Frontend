@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8080/compile",
+  baseURL: "https://codeground-backend.onrender.com/compile",
 });
 
 const CHAPTERSAPI = axios.create({
@@ -13,7 +13,7 @@ export const getChapters = async () => {
   return response.data;
 };
 
-export const executeCode = async (language:any, sourceCode:any) => {
+export const executeCode = async (language: any, sourceCode: any) => {
   if (language !== 'java') {
     throw new Error("Only Java language is supported for local execution");
   }

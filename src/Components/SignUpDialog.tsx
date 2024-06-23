@@ -39,7 +39,7 @@ export default function SignUpDialog() {
 		}
 
 		axios
-			.post("http://localhost:8080/auth/register", {
+			.post("https://codeground-backend.onrender.com/auth/register", {
 				emailId: email,
 				password: password,
 			})
