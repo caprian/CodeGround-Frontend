@@ -63,7 +63,7 @@ export default function CodeGroundHeader(props: ICodeGroundHeaderProps) {
 
 						{/* {!props.isCodeGroundArea && userLogged && ( */}
 						{userLogged && (
-							<li className="navbar-list_items">
+							<li className="navbar-list_lastitem">
 								<Button
 									style={{ color: "white" }}
 									variant="text"
@@ -72,11 +72,11 @@ export default function CodeGroundHeader(props: ICodeGroundHeaderProps) {
 								</Button>
 							</li>
 						)}
-						<li className="navbar-list_lastitem">
+						{/* <li className="navbar-list_lastitem">
 							<Button style={{ color: "white" }} variant="text">
 								About
 							</Button>
-						</li>
+						</li> */}
 					</ul>
 				</div>
 			</div>

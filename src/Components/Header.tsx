@@ -73,13 +73,13 @@ export default function Header(props: IHeaderProps) {
 								</Button>
 							</li>
 						)}
-						{!props.isCodeGroundArea && (
+						{/* {!props.isCodeGroundArea && (
 							<li className="navbar-list_items">
 								<Button style={{ color: "white" }} variant="text">
 									About
 								</Button>
 							</li>
-						)}
+						)} */}
 						{!props.isCodeGroundArea && (
 							<li className="navbar-list_lastitem">
 								<Link className="start-learning_btn-link" to="/codeground">

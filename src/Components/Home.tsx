@@ -96,12 +96,18 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="home-diagram">
-					<img className="home-diagram_image" src={compiler} alt={"logo"}></img>
+					<img
+						className="home-diagram_image code-snippet"
+						src={compiler}
+						alt={"logo"}></img>
 				</div>
 			</div>
 			{/* //footer area */}
 			<div className="home-container_custom custom-sec_two">
 				<Footer />
+			</div>
+			<div className="copyright-text">
+				&copy; Copyright 2024 CodeGround All Rights Reserved{" "}
 			</div>
 		</section>
 	);

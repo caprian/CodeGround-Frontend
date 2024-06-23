@@ -63,8 +63,8 @@ const useCompilerStore = createStore<ICompilerStore>((set, get) => ({
 				setOutput(output);
 			})
 			.catch((error) => {
-				console.error("Error executing codeee", error);
-				setOutput("Error executing codeeee");
+				console.error("Error Executing Code", error);
+				setOutput("Error Executing Code");
 			})
 			.finally(() => {
 				// Reset loading state

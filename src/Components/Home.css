@@ -95,3 +95,17 @@ color: #ffffff;
     padding-right: 100px;
     padding-top: 50px;
 }
+
+.code-snippet.home-diagram_image{
+    border: 10px solid #0a8bc2;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.copyright-text{
+    color: #ffffff;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 1170px;
+    opacity: 0.7;
+}
