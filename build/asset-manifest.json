@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.1aaee90a.css",
-    "main.js": "/static/js/main.0d35211d.js",
+    "main.js": "/static/js/main.4c2d6e6c.js",
     "static/js/453.54bb884e.chunk.js": "/static/js/453.54bb884e.chunk.js",
     "static/media/java-banner.png": "/static/media/java-banner.a06c8e11bf2de9141a92.png",
     "static/media/codeground-compiler.png": "/static/media/codeground-compiler.b76cf470671ce7a9ea9b.png",
     "static/media/CodeGround.png": "/static/media/CodeGround.9f6f0438d10651c9f719.png",
     "index.html": "/index.html",
     "main.1aaee90a.css.map": "/static/css/main.1aaee90a.css.map",
-    "main.0d35211d.js.map": "/static/js/main.0d35211d.js.map",
+    "main.4c2d6e6c.js.map": "/static/js/main.4c2d6e6c.js.map",
     "453.54bb884e.chunk.js.map": "/static/js/453.54bb884e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1aaee90a.css",
-    "static/js/main.0d35211d.js"
+    "static/js/main.4c2d6e6c.js"
   ]
 }
