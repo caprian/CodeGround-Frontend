@@ -81,6 +81,26 @@
         font-family: 'Poppins', sans-serif !important;
 }
 
+.start-learning_btn.css-1hw9j7s{
+    font-style: normal !important; 
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    line-height: 19px !important;
+    color: #FFFFFF !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 164px !important;
+    height: 56px !important;
+    background: linear-gradient(241.71deg, #32C5FF -23.05%, #A3BF4A 95.65%) !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
 .logo{
     height:100%;
     margin-left: -12px;
