@@ -21,7 +21,7 @@ export default function OutputArea() {
 				variant="filled"
 				//defaultValue="You must run your code first"
 				value={output}
-				disabled={true}
+				// disabled={true}
 				fullWidth={true}
 				color="primary"
 				multiline={true}
