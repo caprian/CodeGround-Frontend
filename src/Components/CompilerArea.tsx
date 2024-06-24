@@ -21,7 +21,6 @@ export default function CompilerArea() {
 	const setEditorRef = store.getState().setEditorRef;
 
 	const [javaCode, setJavaCode] = useState(getCodeSnippets(chapter));
-	// const [value, setValue] = useState(javaCode);
 
 	useEffect(() => {
 		const javaCodeSnippet = getCodeSnippets(chapter);
@@ -29,15 +28,10 @@ export default function CompilerArea() {
 		store.setState({ code: javaCodeSnippet });
 	}, [chapter, store]);
 
-	// useEffect(() => {
-	// 	setValue(code);
-	// }, [code]);
-
 	const editorRef = useRef(null);
 
 	const handleEditorChange = (newValue: string | undefined) => {
 		if (newValue !== undefined) {
-			// setValue(newValue);
 			store.setState({ code: newValue });
 		}
 	};
@@ -46,27 +40,14 @@ export default function CompilerArea() {
 		editorRef.current = editor;
 		editor.focus();
 		setEditorRef(editor);
-		//console.log(editor);
 	};
 	useEffect(() => {
 		setEditorRef(editorRef);
 	}, [editorRef, setEditorRef]);
 
-	// const onSelect = (language: string) => {
-	// 	store.setState({ language });
-	// 	const newCode = CODE_SNIPPETS[language];
-	// 	setValue(newCode);
-	// 	store.setState({ code: newCode });
-	// 	console.log(language);
-	// };
-
 	return (
 		<div>
 			<div className="compiler-area-container">
-				{/* <LanguageSelector language={language} onSelect={onSelect} /> */}
-				{/* <div className="btn-run">
-					<RunButton className="run-btn" name="Run" editorRef={editorRef} />
-				</div> */}
 				<FormLabel
 					id="editorform-label"
 					style={{ color: "white" }}
@@ -77,7 +58,6 @@ export default function CompilerArea() {
 					language={language}
 					theme={theme}
 					height="40vh"
-					//defaultValue={javaCode}
 					value={javaCode}
 					onChange={handleEditorChange}
 					onMount={handleEditorMount}

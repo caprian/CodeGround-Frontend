@@ -15,7 +15,6 @@ import SignInDialog from "./SignInDialog";
 import SignUpDialog from "./SignUpDialog";
 
 export default function CodeGround() {
-	//const [chapter, setChapter] = useState<number>(1);
 	const store = useCompilerStoreContext();
 	const setChapter = store.getState().setChapter;
 	const chapter = useStore(store, (state) => state.chapter);

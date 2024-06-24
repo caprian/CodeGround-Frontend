@@ -14,7 +14,6 @@ export default function Footer() {
 
 			<div className="footer-container">
 				<div className="footer-start-container">
-					{/* <img className="footer-logo" src={CodeGround} alt={"logo"}></img> */}
 					<div className="footer-text-header">Get Started</div>
 					<p className="footer-start-text">About</p>
 					<p className="footer-start-text">Courses</p>
@@ -29,8 +28,6 @@ export default function Footer() {
 					<p className="footer-start-text">Linkdin</p>
 					<p className="footer-start-text">Instagram</p>
 					<p className="footer-start-text">Email</p>
-					{/* <img className="footer-logo" src={CodeGround} alt={"logo"}></img>
-					<p className="footer-logo-text">Learn Java the CodeGround way</p> */}
 				</div>
 			</div>
 		</section>

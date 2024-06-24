@@ -48,16 +48,10 @@ export default function Home() {
 				{openSignInDialog && <SignInDialog />}
 				{openSignUpDialog && <SignUpDialog />}
 			</div>
-			{/* //this is section 2 */}
 			<div className="home-container_custom custom-sec_two">
 				<div className="featured-courses_banner custom-sec_banner">
 					<div className="banner-text_parent">
 						<h2 className="banner-text">Why CodeGround is different?</h2>
-						{/* <p className="banner-text_para">
-							Codeground is an interactive platform that teaches you Java from
-							scratch. Read lessons and practice coding simultaneously in our
-							built-in compiler.
-						</p> */}
 					</div>
 				</div>
 				<div className="home-diagram">

@@ -39,7 +39,6 @@ export default function Header(props: IHeaderProps) {
 				</div>
 				<div className="nav-bar">
 					<ul className="navbar-list">
-						{/* {!props.isCodeGroundArea && !userLogged && ( */}
 						{!props.isCodeGroundArea && !userLogged && (
 							<li className="navbar-list_items">
 								<Button
@@ -50,7 +49,6 @@ export default function Header(props: IHeaderProps) {
 								</Button>
 							</li>
 						)}
-						{/* {!props.isCodeGroundArea && !userLogged && ( */}
 						{!props.isCodeGroundArea && !userLogged && (
 							<li className="navbar-list_items">
 								<Button
@@ -62,7 +60,6 @@ export default function Header(props: IHeaderProps) {
 							</li>
 						)}
 
-						{/* {!props.isCodeGroundArea && userLogged && ( */}
 						{!props.isCodeGroundArea && userLogged && (
 							<li className="navbar-list_items">
 								<Button
@@ -73,13 +70,6 @@ export default function Header(props: IHeaderProps) {
 								</Button>
 							</li>
 						)}
-						{/* {!props.isCodeGroundArea && (
-							<li className="navbar-list_items">
-								<Button style={{ color: "white" }} variant="text">
-									About
-								</Button>
-							</li>
-						)} */}
 						{!props.isCodeGroundArea && (
 							<li className="navbar-list_lastitem">
 								<Link className="start-learning_btn-link" to="/codeground">

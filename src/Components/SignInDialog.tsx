@@ -89,18 +89,6 @@ export default function SignInDialog() {
 					</div>
 					{message && <p>{message}</p>}
 					<div className="signin-form_container">
-						{/* <label className="signin-label" htmlFor="email">
-							Email
-						</label> */}
-						{/* <input
-							className="signin-input"
-							type="email"
-							name="email"
-							id="email"
-							value={email}
-							onChange={(e) => setEmail(e.target.value)}
-							required
-						/> */}
 						<InputLabel className="signin-label" htmlFor="email">
 							{" "}
 							Email
@@ -145,17 +133,6 @@ export default function SignInDialog() {
 							/>
 						</div>
 					</div>
-					{/* <div className="dialog-checkbox_container">
-						<input
-							className="signin-checkbox"
-							type="checkbox"
-							value=""
-							id="form2Example3cg"
-						/>
-						<label className="signin-checkbox_label" htmlFor="form2Example3g">
-							Remember Me!
-						</label>
-					</div> */}
 					<Button
 						type="submit"
 						variant="contained"

@@ -83,23 +83,10 @@ export default function SignUpDialog() {
 					</div>
 
 					<div className="signup-form_container">
-						{/* <label className="signup-label" htmlFor="email">
-							Email
-						</label> */}
-
 						<InputLabel className="signup-label" htmlFor="email">
 							{" "}
 							Email
 						</InputLabel>
-						{/* <input
-							className="signup-input"
-							type="email"
-							name="email"
-							id="email"
-							value={email}
-							onChange={(e) => setEmail(e.target.value)}
-							required
-						/> */}
 						<div className="signup-input_container" style={{ width: "100%" }}>
 							<TextField
 								className="signup-input_email"
@@ -111,7 +98,6 @@ export default function SignUpDialog() {
 								required
 							/>
 						</div>
-						{/* <label className="signup-label">Password</label> */}
 						<InputLabel className="signup-label" htmlFor="email">
 							{" "}
 							Password
@@ -125,40 +111,12 @@ export default function SignUpDialog() {
 								value={password}
 								onChange={(e) => setPassword(e.target.value)}
 								required
-								// InputProps={{
-								// 	endAdornment: (
-								// 		<InputAdornment position="end">
-								// 			<IconButton
-								// 				aria-label="toggle password visibility"
-								// 				onClick={handleClickShowPassword}
-								// 				onMouseDown={handleMouseDownPassword}
-								// 				edge="end">
-								// 				{showPassword ? <VisibilityOff /> : <Visibility />}
-								// 			</IconButton>
-								// 		</InputAdornment>
-								// 	),
-								// }}
 							/>
 						</div>
-						{/* <input
-							className="signup-input"
-							type="password"
-							value={password}
-							onChange={(e) => setPassword(e.target.value)}
-							required
-						/> */}
-						{/* <label className="signup-label">Re-Enter Password</label> */}
 						<InputLabel className="signup-label" htmlFor="email">
 							{" "}
 							Re-Enter Password
 						</InputLabel>
-						{/* <input
-							className="signup-input"
-							type="password"
-							value={rePassword}
-							onChange={(e) => setRePassword(e.target.value)}
-							required
-						/> */}
 						<div className="signup-input_container" style={{ width: "100%" }}>
 							<TextField
 								className="signup-input_repword"

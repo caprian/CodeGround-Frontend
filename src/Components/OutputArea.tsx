@@ -10,16 +10,13 @@ export default function OutputArea() {
 
 	return (
 		<div className="outputarea-container">
-			<div className="btn-run">
-				{/* Render your RunButtonComponent here if needed */}
-			</div>
+			<div className="btn-run"></div>
 			<TextField
 				className="readonly-output-area"
 				rows={5}
 				size="medium"
 				label="Output"
 				variant="filled"
-				//defaultValue="You must run your code first"
 				value={output}
 				// disabled={true}
 				fullWidth={true}
