@@ -50,16 +50,11 @@ const useCompilerStore = createStore<ICompilerStore>((set, get) => ({
 	runCode: () => {
 		const { code, language, setOutput, setIsLoading } = get();
 
-		// Ensure there's code to execute
 		if (!code) return;
-
-		// Set loading state to true
 		setIsLoading(true);
 
-		// Call executeCode function (assuming it's imported correctly)
 		executeCode(language, code)
 			.then((output) => {
-				// Set output to the response
 				setOutput(output);
 			})
 			.catch((error) => {
@@ -67,7 +62,6 @@ const useCompilerStore = createStore<ICompilerStore>((set, get) => ({
 				setOutput("Error Executing Code");
 			})
 			.finally(() => {
-				// Reset loading state
 				setIsLoading(false);
 			});
 	},
